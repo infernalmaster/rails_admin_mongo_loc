@@ -4,16 +4,19 @@ Adds to [RailsAdmin](https://github.com/sferik/rails_admin) support for [mongoid
 
 ## Important
 
-Overrides edit.rb from RailsAdmin with same file where commented one line:
+You should overwrite [edit.rb](https://github.com/sferik/rails_admin/blob/master/lib/rails_admin/config/actions/edit.rb) from RailsAdmin with same file where commented one line:
 ```ruby
 #sanitize_params_for!(request.xhr? ? :modal : :update)
 ```
+Just put [that](https://github.com/infernalmaster/rails_admin_mongo_loc/blob/master/lib/edit.rb) file in your project lib/rails_admin and enable it with this row in config/aplication.rb:
+
+	config.autoload_paths += %W(#{config.root}/lib)
 
 ## Installation
 
 In your `Gemfile`add the following dependencies:
 
-    gem 'rails_admin_mongo_loc'
+    gem 'rails_admin_mongo_loc', :git => 'git://github.com/infernalmaster/rails_admin_mongo_loc'
 
 Run:
 
