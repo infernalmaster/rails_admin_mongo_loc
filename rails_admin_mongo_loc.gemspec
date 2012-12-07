@@ -7,13 +7,17 @@ require "rails_admin_mongo_loc/version"
 Gem::Specification.new do |s|
   s.name        = "rails_admin_mongo_loc"
   s.version     = RailsAdminMongoLoc::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of RailsAdminMongoLoc."
-  s.description = "TODO: Description of RailsAdminMongoLoc."
+  s.authors     = ["Rostyslav Diachok"]
+  s.email       = ["infernalmaster1@gmail.com"]
+  s.homepage    = "https://github.com/infernalmaster/rails_admin_mongo_loc"
+  s.summary     = "RailsAdmin support for mongoid localized fields."
+  s.description = %q{Adds to RailsAdmin support for mongoid localized fields.}
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "rails", "~> 3.2.9"
+  s.add_dependency "rails_admin"
+  s.add_dependency "mongoid"
+  s.add_dependency 'haml', '~> 3.1'
+  s.add_dependency "localized_fields"
 end
