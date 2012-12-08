@@ -25,6 +25,12 @@ Run:
 
 ## Usage
 
+Add to your model attr_accessible for <your_localized_fields> and also for <your_localized_fields>_translations. For example:
+
+```ruby
+	:title, :title_translations, :description, :description_translations,
+```
+
 Gem creates two new field types for RailsAdmin: 
 * **textml** — localized analog of native text (https://github.com/sferik/rails_admin/wiki/Text)
 * **stringml** — localized analog of native string (https://github.com/sferik/rails_admin/wiki/String) 
