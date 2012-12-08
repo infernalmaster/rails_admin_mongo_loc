@@ -25,10 +25,10 @@ Run:
 
 ## Usage
 
-Add to your model attr_accessible for <your_localized_fields> and also for <your_localized_fields>_translations. For example:
+Add to your model attr_accessible for **your_localized_fields** and also for **your_localized_fields**_translations. For example:
 
 ```ruby
-	:title, :title_translations, :description, :description_translations,
+	attr_accessible :title, :title_translations, :description, :description_translations,
 ```
 
 Gem creates two new field types for RailsAdmin: 
