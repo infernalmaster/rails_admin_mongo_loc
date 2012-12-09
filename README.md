@@ -4,11 +4,8 @@ Adds to [RailsAdmin](https://github.com/sferik/rails_admin) support for [mongoid
 
 ## Important
 
-You should overwrite [edit.rb](https://github.com/sferik/rails_admin/blob/master/lib/rails_admin/config/actions/edit.rb) from RailsAdmin with same file where commented one line:
-```ruby
-#sanitize_params_for!(request.xhr? ? :modal : :update)
-```
-Just put [that](https://github.com/infernalmaster/rails_admin_mongo_loc/blob/master/lib/edit.rb) file in your project lib/rails_admin and enable it with this row in config/aplication.rb:
+You need to change method *sanitize_params_for!* in [main_controller.rb](https://github.com/sferik/rails_admin/blob/master/lib/rails_admin/config/actions/main_controller.rb) from RailsAdmin.
+Just put [that](https://github.com/infernalmaster/rails_admin_mongo_loc/blob/master/lib/main_controller.rb) file in your project lib/rails_admin and enable it with this row in config/aplication.rb:
 
 	config.autoload_paths += %W(#{config.root}/lib)
 
