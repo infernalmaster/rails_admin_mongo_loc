@@ -2,12 +2,6 @@
 
 Adds to [RailsAdmin](https://github.com/sferik/rails_admin) support for [mongoid localized fields](http://mongoid.org/en/mongoid/docs/documents.html#localized_fields). Based on gem ["localized_fields"](https://github.com/tiagogodinho/localized_fields)
 
-## Important
-
-You need to change method *sanitize_params_for!* in [main_controller.rb](https://github.com/sferik/rails_admin/blob/master/lib/rails_admin/config/actions/main_controller.rb) from RailsAdmin.
-Just put [that](https://github.com/infernalmaster/rails_admin_mongo_loc/blob/master/lib/main_controller.rb) file in your project lib/rails_admin and enable it with this row in config/aplication.rb:
-
-	config.autoload_paths += %W(#{config.root}/lib)
 
 ## Installation
 
@@ -19,20 +13,15 @@ Run:
 
     $ bundle install
 
-
 ## Usage
-
-Add to your model attr_accessible for **your_localized_fields** and also for **your_localized_fields**_translations. For example:
-
-```ruby
-	attr_accessible :title, :title_translations, :description, :description_translations,
-```
 
 Gem creates two new field types for RailsAdmin: 
 * **textml** — localized analog of native text (https://github.com/sferik/rails_admin/wiki/Text)
-* **stringml** — localized analog of native string (https://github.com/sferik/rails_admin/wiki/String) 
+* **stringml** — localized analog of native string (https://github.com/sferik/rails_admin/wiki/String)
 
-###Fields - overriding field type
+*This fields accept all cofigurations as their native analogs* 
+
+###Fields - overring field type
 (more is there https://github.com/sferik/rails_admin/wiki/Railsadmin-DSL)
 
 Fast start.
@@ -51,8 +40,7 @@ RailsAdmin.config do |config|
 end
 ```
 
-If no configuration needs to take place the configuration block could have been
-left out:
+If no configuration needs to take place the configuration block could have been left out:
 
 ```ruby
 RailsAdmin.config do |config|
