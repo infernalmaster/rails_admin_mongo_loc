@@ -20,11 +20,7 @@ module RailsAdmin
           RailsAdmin::Config::Fields::Types::register(self)
 
           register_instance_option :allowed_methods do
-            [method_name, method_mongoid_localized_name]
-          end
-
-          def method_mongoid_localized_name
-            name.to_s + '_translations'
+            [method_name, name.to_s + '_translations']
           end
 
           register_instance_option :partial do
@@ -39,11 +35,7 @@ module RailsAdmin
           RailsAdmin::Config::Fields::Types::register(self)
 
           register_instance_option :allowed_methods do
-            [method_name, method_mongoid_localized_name]
-          end
-
-          def method_mongoid_localized_name
-            name.to_s + '_translations'
+            [method_name, name.to_s + '_translations']
           end
 
           register_instance_option :partial do
