@@ -7,7 +7,7 @@ Adds to [RailsAdmin](https://github.com/sferik/rails_admin) support for [mongoid
 
 In your `Gemfile`add the following dependencies:
 
-    gem 'rails_admin_mongo_loc', :git => 'git://github.com/infernalmaster/rails_admin_mongo_loc'
+    gem 'rails_admin_mongo_loc', :require => 'rails_admin_mongo_loc', :git => 'git://github.com/infernalmaster/rails_admin_mongo_loc'
 
 Run:
 
