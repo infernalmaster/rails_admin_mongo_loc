@@ -1,3 +1,4 @@
-= form.localized_fields do |localized_fields|
-  = localized_fields.label localized_fields.language
-  = localized_fields.text_field field.method_name, field.html_attributes.reverse_merge((hdv = field.html_default_value).nil? ? {} : { :value => hdv, :checked => hdv })
+= form.fields_for (field.name.to_s + '_translations') do |localized_field|
+  - I18n.available_locales.each do |locale|
+    = localized_field.label locale
+    = localized_field.text_field locale.to_s, field.html_attributes.reverse_merge(value: field.value.try(:[], locale.to_s))
