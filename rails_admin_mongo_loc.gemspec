@@ -18,6 +18,6 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "~> 3.2.9"
   s.add_dependency "rails_admin"
   s.add_dependency "mongoid"
-  s.add_dependency 'haml', '~> 3.1'
+  s.add_dependency 'haml', '~> 4.0'
   s.add_dependency "localized_fields"
 end
