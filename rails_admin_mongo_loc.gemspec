@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails"
   s.add_dependency "rails_admin"
-  s.add_dependency "mongoid", '~> 3'
+  s.add_dependency "mongoid", '> 3'
   s.add_dependency 'haml'
   s.add_dependency "localized_fields"
 end
