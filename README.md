@@ -2,6 +2,9 @@
 
 Adds to [RailsAdmin](https://github.com/sferik/rails_admin) support for [mongoid localized fields](http://mongoid.org/en/mongoid/docs/documents.html#localized_fields). Based on gem ["localized_fields"](https://github.com/tiagogodinho/localized_fields)
 
+## Important!
+
+For new versions ( >= 0.5 ) of rails_admin there is a gem [rails_admin_mongoid_localize_filed](https://github.com/sudosu/rails_admin_mongoid_localize_filed)
 
 ## Installation
 
