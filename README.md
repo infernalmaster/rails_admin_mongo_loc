@@ -4,7 +4,7 @@ Adds to [RailsAdmin](https://github.com/sferik/rails_admin) support for [mongoid
 
 ## Important!
 
-For new versions ( >= 0.5 ) of rails_admin there is a gem [rails_admin_mongoid_localize_filed](https://github.com/sudosu/rails_admin_mongoid_localize_filed)
+For new versions ( >= 0.5 ) of rails_admin there is a gem [rails_admin_mongoid_localize_field](https://github.com/sudosu/rails_admin_mongoid_localize_field)
 
 ## Installation
 
